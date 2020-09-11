@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "XYZ";
+    var rd = new Random();
+}
+
+<h1>XYZ</h1>
+<div>@ViewBag.A</div>
+<div>@ViewBag.B</div>
+<div>@ViewData["B"]</div>
+@for(var i = 0; i < 45; i++)
+{
+    <div>@rd.Next(100, 999)</div>
+}
+
