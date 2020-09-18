@@ -9,6 +9,15 @@ namespace MVCApp.Controllers
             return View();
         }
 
+        public IActionResult TranferData()
+        {
+            ViewData["Truong Hoc"] = "HCMUE";
+            ViewData["Lop"] = "COMP1064";
+            ViewBag.NamHoc = 2020;
+
+            return View();
+        }
+
         //host/Demo/ABC
         public IActionResult ABC()
         {
