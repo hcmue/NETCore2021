@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    @RenderSection("css", required:false)
+</head>
+<body>
+    <header style="height:135px;" class="bg-danger">
+        #MY HEADER
+    </header>
+    <div style="min-height:400px; border:1px solid blue;">
+        @RenderBody()
+    </div>
+    <footer class="bg-success text-center">
+        Bản quyền thuộc về CNTT - K44
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
